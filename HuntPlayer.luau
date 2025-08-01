@@ -12,6 +12,7 @@ player.CharacterAdded:Connect(function(character : Model)
 			player.PlayerGui:WaitForChild("ScreenGui").Enabled = true
 		end)
 	end)
+end)
 
 	while task.wait(0.5) do
 		if game.Players[_G.HuntPlayer].Character:WaitForChild("HumanoidRootPart") then
@@ -29,4 +30,3 @@ player.CharacterAdded:Connect(function(character : Model)
 			end
 		end
 	end
-end)
