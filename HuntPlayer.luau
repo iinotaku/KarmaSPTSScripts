@@ -15,7 +15,7 @@ player.CharacterAdded:Connect(function(character : Model)
 end)
 
 	while task.wait(0.5) do
-		if game.Players[_G.HuntPlayer].Character:WaitForChild("HumanoidRootPart") then
+		if game.Players[_G.HuntPlayer].Character:WaitForChild("HumanoidRootPart") and player.Character then
 			if not Combat_FirstPunch then
 				Combat_FirstPunch = true
 				game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvent"):FireServer({ "Skill_Punch", "Right" })
